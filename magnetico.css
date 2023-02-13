@@ -1,0 +1,235 @@
+body{
+
+color: black;
+background-color: rgb(8, 6, 6);
+gap: 2em;
+font-size: 1.5em;line-height: 1.6;
+margin: 0;
+padding: 0;
+min-height: 100vh;
+max-width: 100vw;
+align-items: center;
+text-align: center;
+}
+
+.logo{
+
+	gap: 5px;
+}
+
+.REDUZIDO{
+	padding: 1px;
+	width: 209px;
+	height: 209px ;
+	border-radius: 49%;
+	border:3px;
+}
+.template-img{
+	width: 211.2px;
+	height: 211.2px;
+	border-radius: 48%;
+	object-fit: cover;
+	object-position: center;
+	border: 5px solid var(color);
+}
+.section {
+	align-items: center;
+    text-align: center;
+	
+}
+
+.titulo{
+	width: 325px;
+	height: 45px; 
+	padding: 5px;
+}
+
+
+
+
+
+.all img{
+
+flex-direction: column;
+
+object-fit: cover;
+object-position: center;
+border-radius: 0.5rem;
+gap: 1.5em;
+
+}
+
+
+
+.image1{
+	padding: 1px;
+
+	object-position: center;
+	object-fit: cover;
+
+	
+	position: relative;
+	box-shadow: 0 1px 2px 0 ;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.AGENDE{
+	width: 510px;
+	height: 200PX;
+}
+/*efeito zoom css na segunda img*/
+.image2{
+	padding: 2px;;
+	
+	object-position: center;
+	object-fit: cover;
+
+		
+}
+
+
+
+
+.FALE{
+	width: 510px;
+	height: 179PX;
+
+}
+/* css na terceira img*/
+.image3{
+padding: 2px;
+object-position: center;
+object-fit: cover;
+position: relative;
+	
+
+}
+
+
+
+
+.fale2{
+	width: 510px;
+	height: 179PX;
+	
+}
+
+/*efeito zoom css*/
+ .image1 .image2 .image3{
+	position: relative;
+	box-shadow: 0 1px 2px 0 ;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ .image1 .image2 .image3::after{
+	content:"" ;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	box-shadow: 0 5px 0;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	z-index: -1;
+}
+
+
+ .image1 .image2 .image3:hover{
+	transform: scale(1.25,1.25);
+}
+ .image1 .image2 .image3:hover::after{
+	opacity: 1;
+}
+/*RESPONSIV*/
+
+@media only screen and (max-width: 767px) {
+body {
+color: black;
+background-color: rgb(8, 6, 6);
+font-size: 1.2em;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+min-height: 100vh;
+max-width: 100vw;
+align-items: center;
+text-align: center;
+}
+
+.logo {
+gap: 2px;
+}
+
+.REDUZIDO {
+padding: 1px;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 2px;
+}
+
+.template-img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;
+border: 3px solid var(color);
+}
+
+.section {
+align-items: center;
+text-align: center;
+}
+
+.titulo {
+width: 267px;
+height: 40px;
+padding: 4px;
+}
+
+.all img {
+flex-direction: column;
+object-fit: cover;
+object-position: center;
+border-radius: 0.5rem;
+gap: 1em;
+}
+
+.image1 {
+padding: 1px;
+object-position: center;
+object-fit: cover;
+position: relative;
+box-shadow: 0 1px 2px 0;
+transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.AGENDE {
+width: 350px;
+height: 150px;
+}
+
+.image2 {
+padding: 1px;
+object-position: center;
+object-fit: cover;
+}
+
+.FALE {
+width: 350px;
+height: 130px;
+}
+
+.image3 {
+padding: 1px;
+object-position: center;
+object-fit: cover;
+position: relative;
+}
+
+.fale2 {
+width: 350px;
+height: 130px;
+}
+}
